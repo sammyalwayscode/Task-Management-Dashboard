@@ -4,8 +4,8 @@ import { filterTask } from "../services/ReduxState/Action";
 import FilterTable from "../components/FilterTable";
 
 const FilterTask = () => {
-  const tasks = useSelector((state) => state.myReducer.data);
-  const filter = useSelector((state) => state.myReducer.filter);
+  const tasks = useSelector((state) => state.data);
+  const filter = useSelector((state) => state.filter);
   const dispatch = useDispatch();
 
   const filteredTasks = tasks.filter((task) => {

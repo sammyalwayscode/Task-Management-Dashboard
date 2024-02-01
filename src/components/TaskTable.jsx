@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 const TaskTable = () => {
-  const getTask = useSelector((state) => state.myReducer.data);
+  const getTask = useSelector((state) => state.data);
   console.log(getTask);
 
   return (

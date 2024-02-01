@@ -10,7 +10,7 @@ const EditTaskInput = () => {
   console.log(id);
   const navigate = useNavigate();
 
-  const getTask = useSelector((state) => state.myReducer.data);
+  const getTask = useSelector((state) => state.data);
   console.log(getTask);
   const specificTask = getTask.find((task) => task.id === id);
   console.log("Special", specificTask);

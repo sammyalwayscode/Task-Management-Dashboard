@@ -9,7 +9,7 @@ const TaskDescription = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   console.log(id);
-  const getTask = useSelector((state) => state.myReducer.data);
+  const getTask = useSelector((state) => state.data);
   console.log(getTask);
   const specificTask = getTask.find((task) => task.id === id);
   console.log("Special", specificTask);
